@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FineCarInstalls | GTA Professional Dashcam Installation</title>
+
+<style>
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #000000, #1a1a1a);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 60px;
+  animation: slideInLogo 1s ease forwards;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 8px #00c3ff);
+}
+
+@keyframes slideInLogo {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #00c3ff;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+
+nav a:hover::after { width: 100%; }
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+}
+
+.hero h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #00c3ff;
+  padding: 15px 30px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,195,255,0.4);
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SERVICES */
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background-color: #1c1c1c;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,195,255,0.2);
+}
+
+.card h3 { color: #00c3ff; }
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,195,255,0.3);
+}
+
+/* LIGHTBOX */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* BOOKING FORM */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background-color: #00c3ff;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  box-shadow: 0 10px 25px rgba(0,195,255,0.4);
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: #888;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero h2 { font-size: 32px; }
+  .services { flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/logo.png" alt="FineCarInstalls Logo">
+  </div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#booking">Book Now</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Professional Dashcam Installation in the GTA</h2>
+    <p>Serving Toronto, Mississauga, Brampton, Vaughan & Surrounding Areas</p>
+    <a href="#booking" class="btn">Book Installation</a>
+  </div>
+</section>
+
+<section id="services" class="fade-in">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Front & Rear Dashcams</h3>
+      <p>Full coverage protection with premium camera systems.</p>
+    </div>
+    <div class="card">
+      <h3>Hardwire Installation</h3>
+      <p>Clean, hidden wiring for factory-level finish.</p>
+    </div>
+    <div class="card">
+      <h3>Parking Mode Setup</h3>
+      <p>24/7 protection even when parked.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="fade-in">
+  <h2>Recent Installations</h2>
+  <p>Professional installs completed across the GTA</p>
+
+  <div class="gallery">
+
+    <img src="C:\Users\aadeshpuri\Desktop\fine car\1.jpg">
+    <img src="C:\Users\aadeshpuri\Desktop\fine car\2.jpg">
+    <img src="C:\Users\aadeshpuri\Desktop\fine car\3.jpg">
+    <img src="C:\Users\aadeshpuri\Desktop\fine car\4.jpg">
+    <img src="C:\Users\aadeshpuri\Desktop\fine car\5.jpg">
+    <img src="C:\Users\aadeshpuri\Desktop\fine car\6.jpg">
+
+  </div>
+</marquee>
+
+<section id="booking" class="fade-in">
+  <h2>Book Your Installation</h2>
+  <form action="https://formsubmit.co/aadesh.puri@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    
+    <select name="service" required>
+      <option value="">Select Service</option>
+      <option>Front Dashcam</option>
+      <option>Front & Rear Dashcam</option>
+      <option>Backup Camera</option>
+      <option>Mirror Dashcam</option>
+     <option>Hardwire Installation</option>
+      <option>Parking Mode Setup</option>
+    </select>
+    <textarea name="message" rows="4" placeholder="Vehicle Make & Model / Additional Info"></textarea>
+    <input type="submit" value="Request Booking">
+  </form>
+  <p style="margin-top:20px;">📞 (647) 687-4030</p>
+</section>
+
+<footer>
+  <p>© 2026 FineCarInstalls | Serving the Greater Toronto Area</p>
+</footer>
+
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+</div>
+
+<script>
+/* Fade-in animation */
+const faders = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+faders.forEach(section => observer.observe(section));
+
+/* Lightbox */
+const galleryImages = document.querySelectorAll('.gallery img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.close');
+
+galleryImages.forEach(image => {
+  image.addEventListener('click', () => {
+    lightbox.style.display = "block";
+    lightboxImg.src = image.src;
+  });
+});
+
+closeBtn.onclick = () => lightbox.style.display = "none";
+lightbox.onclick = (e) => {
+  if(e.target !== lightboxImg){
+    lightbox.style.display = "none";
+  }
+};
+</script>
+
+</body>
+</html>
