@@ -304,7 +304,7 @@ footer {
 <section id="booking" class="fade-in">
   <h2>Book Your Installation</h2>
   <form action="https://formsubmit.co/aadesh.puri@gmail.com" method="POST">
-   
+
   <!-- Send copy to phone -->
   <input type="hidden" name="_cc" value="6476874030@txt.bell.ca">
 
@@ -314,25 +314,27 @@ footer {
   <!-- Disable captcha -->
   <input type="hidden" name="_captcha" value="false">
 
-    <!-- Redirect to Thank You page -->
-  <input type="hidden" name="_next" value="thank-you.html">
-    
-    <input type="text" name="name" placeholder="Full Name" required>
-    <input type="tel" name="phone" placeholder="Phone Number" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    
-    <select name="service" required>
-      <option value="">Select Service</option>
-      <option>Front Dashcam</option>
-      <option>Front & Rear Dashcam</option>
-      <option>Backup Camera</option>
-      <option>Mirror Dashcam</option>
-     <option>Hardwire Installation</option>
-      <option>Parking Mode Setup</option>
-    </select>
-    <textarea name="message" rows="4" placeholder="Vehicle Make & Model / Additional Info"></textarea>
-    <input type="submit" value="Request Booking">
-  </form>
+  <!-- Redirect to Thank You page -->
+  <input type="hidden" name="_next" value="https://finecarinstalls.com/thank-you.html">
+
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+  <input type="email" name="email" placeholder="Email Address" required>
+
+  <select name="service" required>
+    <option value="">Select Service</option>
+    <option>Front Dashcam</option>
+    <option>Front & Rear Dashcam</option>
+    <option>Backup Camera</option>
+    <option>Mirror Dashcam</option>
+    <option>Hardwire Installation</option>
+    <option>Parking Mode Setup</option>
+  </select>
+
+  <textarea name="message" rows="4" placeholder="Vehicle Make & Model / Additional Info"></textarea>
+  <input type="submit" value="Request Booking">
+
+</form>
 
 </section>
 
@@ -380,6 +382,7 @@ lightbox.onclick = (e) => {
 
 </body>
 </html>
+
 
 
 
