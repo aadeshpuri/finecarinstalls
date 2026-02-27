@@ -304,6 +304,16 @@ footer {
 <section id="booking" class="fade-in">
   <h2>Book Your Installation</h2>
   <form action="https://formsubmit.co/aadesh.puri@gmail.com" method="POST">
+   
+  <!-- Send copy to phone -->
+  <input type="hidden" name="_cc" value="6476874030@txt.bell.ca">
+
+  <!-- Custom subject -->
+  <input type="hidden" name="_subject" value="New FineCarInstalls Booking Request">
+
+  <!-- Disable captcha -->
+  <input type="hidden" name="_captcha" value="false">
+   
     <input type="text" name="name" placeholder="Full Name" required>
     <input type="tel" name="phone" placeholder="Phone Number" required>
     <input type="email" name="email" placeholder="Email Address" required>
@@ -367,6 +377,7 @@ lightbox.onclick = (e) => {
 
 </body>
 </html>
+
 
 
 
