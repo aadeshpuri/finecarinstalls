@@ -190,8 +190,9 @@ button:hover{
     <label>Email Address <span class="required">*</span></label>
     <input type="email" name="Email Address" required>
 
-    <label>Date <span class="required">*</span></label>
-    <input type="date" name="Date" required>
+    
+<label>Date *</label>
+<input type="date" id="dateField" name="Date" required readonly>
 
     <!-- Terms -->
 
@@ -282,7 +283,17 @@ button:hover{
 </form>
 
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const today = new Date().toISOString().split('T')[0];
+    const dateField = document.getElementById("dateField");
 
+    dateField.value = today;
+    dateField.min = today;
+    dateField.max = today;
+});
+</script>
+    
 </body>
 </html>
 ```
