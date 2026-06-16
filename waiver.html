@@ -1,0 +1,288 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FineCarInstalls - Customer Waiver & Authorization</title>
+
+<style>
+:root{
+    --red:#d62828;
+    --black:#111111;
+    --gray:#f4f4f4;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--gray);
+    color:#222;
+    line-height:1.6;
+}
+
+.header{
+    background:var(--black);
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+    border-bottom:5px solid var(--red);
+}
+
+.logo{
+    max-width:300px;
+    width:100%;
+    height:auto;
+    display:block;
+    margin:0 auto 20px auto;
+}
+
+.header h1{
+    margin:10px 0;
+    font-size:2rem;
+}
+
+.header p{
+    margin:0;
+    color:#ddd;
+}
+
+.home-link{
+    display:inline-block;
+    margin-bottom:20px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.home-link:hover{
+    color:#ccc;
+}
+
+.container{
+    max-width:1000px;
+    margin:30px auto;
+    padding:30px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+h2{
+    color:var(--black);
+    border-bottom:2px solid #eee;
+    padding-bottom:8px;
+}
+
+.section{
+    margin-bottom:30px;
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"]{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    margin-bottom:18px;
+    font-size:16px;
+}
+
+.notice{
+    background:#fff8e1;
+    border-left:4px solid #f9a825;
+    padding:15px;
+    margin:20px 0;
+}
+
+.checkbox-container{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    margin:25px 0;
+}
+
+.checkbox-container input{
+    margin-top:4px;
+}
+
+button{
+    background:var(--red);
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:14px 30px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#b71c1c;
+}
+
+.small{
+    color:#666;
+    font-size:14px;
+    margin-top:20px;
+}
+
+.required{
+    color:red;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+    <a href="/" class="home-link">← Return to FineCarInstalls</a>
+
+    <img src="images/logo.png"
+         alt="FineCarInstalls Logo"
+         class="logo">
+
+    <h1>Customer Authorization, Waiver & Release Agreement</h1>
+
+    <p>Please review and complete this form before installation services begin.</p>
+
+</div>
+
+<div class="container">
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Web3Forms Settings -->
+    <input type="hidden" name="access_key" value="c8e76909-34d4-4da1-b1f0-a88c2de586b0">
+
+    <input type="hidden" name="subject"
+           value="New FineCarInstalls Waiver Submission">
+
+    <input type="hidden" name="from_name"
+           value="FineCarInstalls Waiver Form">
+
+    <input type="checkbox" name="botcheck" style="display:none;">
+
+    <!-- Customer Information -->
+
+    <h2>Customer Information</h2>
+
+    <label>Full Name <span class="required">*</span></label>
+    <input type="text" name="Customer Name" required>
+
+    <label>Phone Number <span class="required">*</span></label>
+    <input type="tel" name="Phone Number" required>
+
+    <label>Email Address <span class="required">*</span></label>
+    <input type="email" name="Email Address" required>
+
+    <label>Date <span class="required">*</span></label>
+    <input type="date" name="Date" required>
+
+    <!-- Terms -->
+
+    <div class="section">
+
+        <h2>Customer Authorization & Vehicle Disclosures</h2>
+
+        <p>I, the undersigned customer, authorize FineCarInstalls to perform the installation services described above on my vehicle. I confirm that I am the owner of the vehicle or have authorization from the owner to approve these services.</p>
+
+        <p><strong>Pre-Existing Conditions:</strong> My vehicle may contain hidden defects, previous repairs, aftermarket modifications, damaged clips, worn trim components, or electrical issues not visible prior to installation. FineCarInstalls is not responsible for damage resulting from pre-existing conditions, previous repairs, aging vehicle components, manufacturer defects, or undisclosed modifications. I have disclosed any known electrical, battery, or vehicle issues.</p>
+
+        <p><strong>Vehicle Condition Disclosure:</strong> FineCarInstalls may photograph, video record, and document the vehicle’s condition before, during, and after installation. Such documentation may include existing damage, worn components, prior repairs, aftermarket modifications, missing fasteners, cracked trim, or other pre-existing conditions. Such documentation may be relied upon as evidence of the vehicle’s condition before service was performed.</p>
+
+        <p><strong>Installation Risks:</strong> Removal or adjustment of interior trim panels, headliners, weather stripping, dashboards, pillar covers, or wiring access panels may be required. While FineCarInstalls exercises reasonable care, I acknowledge certain components may become damaged due to age, brittleness, previous repairs, hidden defects, or manufacturer design.</p>
+
+        <p><strong>Electrical System:</strong> I authorize connections to my vehicle’s electrical system. FineCarInstalls is not responsible for weak or failing batteries, charging system issues, alternator problems, existing electrical faults, existing blown fuses, electrical issues unrelated to the installation, or manufacturer defects.</p>
+
+        <p><strong>Customer Gear:</strong> For customer-supplied equipment, FineCarInstalls does not guarantee compatibility, functionality, reliability, or performance. Labor charges remain payable regardless of product failure. No warranty is provided.</p>
+
+        <p><strong>Parking Mode:</strong> Continuous recording draws power. Performance varies by battery condition, use, weather, and vehicle design. FineCarInstalls is not responsible for battery drain, dead batteries, shortened battery life, or charging system issues.</p>
+
+        <p><strong>Warranties & Property:</strong> FineCarInstalls makes no representation regarding manufacturer or extended warranty coverage. Customers are responsible for removing all personal items; FineCarInstalls is not liable for lost, stolen, or damaged property.</p>
+
+        <p><strong>Photos/Videos:</strong> FineCarInstalls may document vehicle condition, the installation process, and completed work for quality, warranty, or training.</p>
+
+        <p>I consent to marketing/social media use.</p>
+
+    </div>
+
+    <div class="section">
+
+        <h2>Privacy, Warranty & Payments</h2>
+
+        <p><strong>Privacy and Information Use:</strong> FineCarInstalls collects customer information, including names, addresses, phone numbers, email addresses, vehicle information, photographs, and service records, for the purposes of providing services, scheduling appointments, processing payments, maintaining warranty records, communicating with customers, complying with legal obligations, and resolving disputes.</p>
+
+        <p><strong>Inspection & Acceptance:</strong> Upon completion, I agree to inspect the vehicle. Any concerns must be reported as soon as reasonably possible. Acceptance constitutes acknowledgment that the work was completed to my satisfaction unless documented at pickup.</p>
+
+        <p><strong>7-Day Workmanship Warranty:</strong> Covers defects directly related to installation workmanship (improperly secured wiring, connection issues, mounting issues) reported within 7 days for correction at no labor charge.</p>
+
+        <p><strong>Payment Terms:</strong> Payment is due immediately upon completion. Ownership of supplied products remains with FineCarInstalls until paid in full.</p>
+
+    </div>
+
+    <div class="section">
+
+        <h2>Liability Limits & Legal Terms</h2>
+
+        <p><strong>Limitation of Liability:</strong> To the fullest extent permitted by law, FineCarInstalls shall not be liable for indirect, incidental, special, or consequential damages including loss of vehicle use, lost recordings, theft, accidents, insurance claims, lost income, or business interruption.</p>
+
+        <p><strong>Liability Cap:</strong> Under no circumstances shall the total liability of FineCarInstalls exceed the amount paid by the customer for the installation services giving rise to the claim.</p>
+
+        <p><strong>Claim Limitation Period:</strong> Any claim, action, or proceeding arising from services performed by FineCarInstalls must be commenced within one (1) year from the date services were completed.</p>
+
+    </div>
+
+    <div class="section">
+
+        <h2>Release & Waiver of Liability</h2>
+
+        <p>I voluntarily assume all risks associated with the services performed by FineCarInstalls.</p>
+
+        <p>To the fullest extent permitted by law, I release, waive, discharge, and hold harmless FineCarInstalls, its owners, employees, contractors, agents, and representatives from any and all claims, demands, liabilities, damages, losses, costs, expenses, or causes of action arising from or related to the installation services, including claims arising from ordinary negligence, except where prohibited by applicable law or resulting from gross negligence, willful misconduct, or intentional wrongdoing.</p>
+
+    </div>
+
+    <div class="notice">
+        <strong>Electronic Signature Consent</strong><br>
+        By typing your full legal name below, you agree that your electronic signature has the same legal effect as a handwritten signature.
+    </div>
+
+    <label>Electronic Signature <span class="required">*</span></label>
+    <input type="text" name="Electronic Signature" required>
+
+    <div class="checkbox-container">
+        <input type="checkbox" id="agreement" required>
+
+        <label for="agreement">
+            I have read and understood this agreement, have had the opportunity to ask questions, voluntarily agree to all terms and conditions, and authorize FineCarInstalls to perform the requested services on my vehicle.
+        </label>
+    </div>
+
+    <button type="submit">Submit Waiver</button>
+
+    <p class="small">
+        By submitting this form, you acknowledge that your electronic signature has the same legal effect as a handwritten signature.
+    </p>
+
+</form>
+
+</div>
+
+</body>
+</html>
+```
